@@ -1,0 +1,190 @@
+[Project Header]
+Version = 801
+Pathname = "/d/MuonlabII.2/muonlab2.2.prj"
+CVI Dir = "/c/program files/national instruments/cvi80"
+IVI Standard Root Dir = "/C/Program Files/IVI"
+VXIplug&play Framework Dir = "/c/vxipnp/winnt"
+Number of Files = 7
+Target Type = "Executable"
+Flags = 16
+
+[File 0001]
+File Type = "Unknown"
+Res Id = 1
+Path Is Rel = True
+Path Rel To = "Project"
+Path Rel Path = "../background/640x480_zonder_logo.bmp"
+Path = "/d/background/640x480_zonder_logo.bmp"
+Exclude = False
+Project Flags = 0
+Folder = "Not In A Folder"
+
+[File 0002]
+File Type = "Function Panel"
+Res Id = 2
+Path Is Rel = True
+Path Rel To = "CVI"
+Path Rel Path = "toolslib/toolbox/asynctmr.fp"
+Path = "/c/program files/national instruments/cvi80/toolslib/toolbox/asynctmr.fp"
+Exclude = False
+Project Flags = 0
+Folder = "Instrument Files"
+
+[File 0003]
+File Type = "Unknown"
+Res Id = 3
+Path Is Rel = True
+Path Rel To = "Project"
+Path Rel Path = "../background/mu_groot2.ico"
+Path = "/d/background/mu_groot2.ico"
+Exclude = False
+Project Flags = 0
+Folder = "Not In A Folder"
+
+[File 0004]
+File Type = "Unknown"
+Res Id = 4
+Path Is Rel = True
+Path Rel To = "Project"
+Path Rel Path = "mu_klein2.ico"
+Path = "/d/MuonlabII.2/mu_klein2.ico"
+Exclude = False
+Project Flags = 0
+Folder = "Not In A Folder"
+
+[File 0005]
+File Type = "Include"
+Res Id = 5
+Path Is Rel = True
+Path Rel To = "Project"
+Path Rel Path = "muonlab.h"
+Path = "/d/MuonlabII.2/muonlab.h"
+Exclude = False
+Project Flags = 0
+Folder = "Include Files"
+
+[File 0006]
+File Type = "User Interface Resource"
+Res Id = 6
+Path Is Rel = True
+Path Rel To = "Project"
+Path Rel Path = "muonlab.uir"
+Path = "/d/MuonlabII.2/muonlab.uir"
+Exclude = False
+Project Flags = 0
+Folder = "User Interface Files"
+
+[File 0007]
+File Type = "CSource"
+Res Id = 7
+Path Is Rel = True
+Path Rel To = "Project"
+Path Rel Path = "muonlab2.c"
+Path = "/d/MuonlabII.2/muonlab2.c"
+Exclude = False
+Compile Into Object File = False
+Project Flags = 0
+Folder = "Source Files"
+
+[Folders]
+Folder 0 = "Source Files"
+Folder 1 = "User Interface Files"
+Folder 2 = "Include Files"
+Folder 3 = "Instrument Files"
+
+[Compiler Options]
+Default Calling Convention = "cdecl"
+Require Prototypes = True
+Require Return Values = True
+Enable Pointer Mismatch Warning = False
+Enable Unreachable Code Warning = False
+Enable Unreferenced Identifiers Warning = False
+Enable Assignment In Conditional Warning = False
+O Option Compatible With 5.0 = False
+Uninitialized Locals Compile Warning = "Conservative"
+
+[Run Options]
+Stack Size = 250000
+Image Base Address = 4194304
+
+[Compiler Defines]
+Compiler Defines = "/DWIN32_LEAN_AND_MEAN"
+
+[Include Paths]
+Include Path 1 Is Rel = False
+Include Path 1 = "/c/Users/Paul/Documents/Master Onderzoek/Software/Demoproef code/background"
+Include Path 2 Is Rel = True
+Include Path 2 Rel To = "Project"
+Include Path 2 Rel Path = ""
+Include Path 2 = "/d/MuonlabII.2"
+
+[Create Executable]
+Executable File_Debug Is Rel = True
+Executable File_Debug Rel To = "Project"
+Executable File_Debug Rel Path = "muonlab2_dbg.exe"
+Executable File_Debug = "/d/MuonlabII.2/muonlab2_dbg.exe"
+Executable File_Release Is Rel = True
+Executable File_Release Rel To = "Project"
+Executable File_Release Rel Path = "muonlabII.2.exe"
+Executable File_Release = "/d/MuonlabII.2/muonlabII.2.exe"
+Icon File Is Rel = True
+Icon File Rel To = "Project"
+Icon File Rel Path = "mu_groot2.ico"
+Icon File = "/d/MuonlabII.2/mu_groot2.ico"
+Application Title = "Muonlab II.2"
+Numeric File Version = "1,0,5,0"
+Numeric Prod Version = "1,0,5,0"
+Comments = ""
+Company Name = "NIKHEF Amsterdam"
+File Description = ""
+File Version = "1.0"
+Internal Name = "muonlabII"
+Legal Copyright = "Copyright © NIKHEF, 2011"
+Legal Trademarks = ""
+Original Filename = "muonlabII.exe"
+Private Build = ""
+Product Name = "NIKHEF "
+Product Version = "1.0"
+Special Build = ""
+DLL Exports = "Include File Symbols"
+DLL Import Library Choice = "Gen Lib For Current Mode"
+Use IVI Subdirectories for Import Libraries = False
+Use VXIPNP Subdirectories for Import Libraries = False
+Use Dflt Import Lib Base Name = True
+Where to Copy DLL = "Do not copy"
+Add Type Lib To DLL = False
+Include Type Lib Help Links = False
+Type Lib FP File Is Rel = False
+Type Lib FP File = ""
+Type Lib Guid = ""
+Runtime Support = "Full Runtime Support"
+Instrument Driver Support Only = False
+Embed Project .UIRs = False
+Generate Map File = False
+
+[External Compiler Support]
+UIR Callbacks File Option = 0
+Using LoadExternalModule = False
+Create Project Symbols File = True
+UIR Callbacks Obj File Is Rel = False
+UIR Callbacks Obj File = ""
+Project Symbols H File Is Rel = False
+Project Symbols H File = ""
+Project Symbols Obj File Is Rel = False
+Project Symbols Obj File = ""
+
+[ActiveX Server Options]
+Specification File Is Rel = False
+Specification File = ""
+Source File Is Rel = False
+Source File = ""
+Include File Is Rel = False
+Include File = ""
+IDL File Is Rel = False
+IDL File = ""
+Register ActiveX Server = False
+
+[tpcSection]
+tpcEnabled = 0
+tpcOverrideEnvironment = 0
+

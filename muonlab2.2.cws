@@ -1,0 +1,133 @@
+[Workspace Header]
+Version = 801
+Pathname = "/d/Muonlab2.2/muonlab2.2.cws"
+CVI Dir = "/c/program files/national instruments/cvi80"
+IVI Standard Root Dir = "/C/Program Files/IVI"
+VXIplug&play Framework Dir = "/c/vxipnp/winnt"
+Number of Projects = 1
+Active Project = 1
+Project 0001 = "muonlab2.2.prj"
+Drag Bar Left = 160
+Window Top = 108
+Window Left = 18
+Window Bottom = 610
+Window Right = 808
+Maximized = True
+Maximized Children = True
+Max Number Of Errors = 20
+Track Include File Dependencies = True
+Prompt For Missing Includes = True
+Stop On First Error File = False
+Bring Up Err Win For Warnings = True
+Show Build Dialog = False
+Save Changes Before Running = "Always"
+Hide Windows = False
+Global Hot Key = False
+Break At First Statement = False
+Sort Type = "File Name"
+Number of Opened Files = 3
+Window Confinement Region Enabled = True
+MainColumnWidth = 141
+FileDateColumnWidth = 70
+FileSizeColumnWidth = 70
+StatusColumnWidth = 70
+
+[Project Header 0001]
+Version = 801
+Don't Update DistKit = False
+Platform Code = 4
+Build Configuration = "Release"
+Warn User If Debugging Release = 1
+Batch Build Release = False
+Batch Build Debug = False
+Force Rebuild = False
+
+[File 0001]
+Path = "/c/Program Files/National Instruments/CVI80/toolslib/toolbox/asynctmr.fp"
+File Type = "Function Panel"
+Disk Date = 3227500800
+In Projects = "1,"
+
+[File 0002]
+Path = "/d/Muonlab2.2/muonlab.h"
+File Type = "Include"
+Disk Date = 3409569959
+In Projects = "1,"
+Window Top = 32
+Window Left = 10
+Window Z-Order = 3
+Source Window State = "1,0,0,0,0,0,0,0,0,85,0,0,0,0,0,25,41,0,0,0,349,715,1,0,"
+
+[File 0003]
+Path = "/d/Muonlab2.2/muonlab.uir"
+File Type = "User Interface Resource"
+Disk Date = 3410522312
+In Projects = "1,"
+Window Top = 62
+Window Left = 26
+Window Height = 349
+Window Width = 715
+Window Z-Order = 2
+
+[File 0004]
+Path = "/d/Muonlab2.2/muonlab2.c"
+File Type = "CSource"
+Disk Date = 3412066377
+In Projects = "1,"
+Window Top = 32
+Window Left = 10
+Window Z-Order = 1
+Source Window State = "1,947,947,947,94,107,94,0,0,136,0,517,0,0,0,68,896,0,1130,33,336,715,1,0,"
+
+[File 0005]
+Path = "/d/background/640x480_zonder_logo.bmp"
+File Type = "Unknown"
+Disk Date = 3217933800
+In Projects = "1,"
+
+[File 0006]
+Path = "/d/background/mu_groot2.ico"
+File Type = "Unknown"
+Disk Date = 3223038542
+In Projects = "1,"
+
+[File 0007]
+Path = "/d/Muonlab2.2/mu_klein2.ico"
+File Type = "Unknown"
+Disk Date = 3354697162
+In Projects = "1,"
+
+[Build Options 0001]
+Generate Browse Info = True
+Enable Uninitialized Locals Runtime Warning = True
+Debugging Level = "Standard"
+Break On Library Errors = True
+Break On First Chance Exceptions = False
+Execution Target Address = "Local desktop computer"
+Execution Target Port = 0
+Execution Target Type = 0
+
+[SCC Options 0001]
+Use global settings = True
+SCC Provider = ""
+SCC Project = ""
+Local Path = ""
+Auxiliary Path = ""
+Perform Same Action For .h File As For .uir File = "Ask"
+Username = ""
+Comment = ""
+Use Default Username = False
+Use Default Comment = False
+Suppress CVI Error Messages = False
+
+[DLL Debugging Support 0001]
+External Process Path = ""
+
+[Command Line Args 0001]
+Command Line Args = ""
+
+[Distributions]
+Active Index = 1
+AbsCDSPath 0001 = "/d/Muonlab2.2/Muonlab II.2.cds"
+RelCDSPath 0001 = "Muonlab II.2.cds"
+
