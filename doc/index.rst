@@ -8,8 +8,8 @@
 Welkom bij Practicum kosmische straling!
 ============================================
 
-U kunt het software installatiepakket downloaden: `hisparcInstaller
-<http://data.hisparc.nl/media/uploads/hisparc/hisparcInstaller_v6.10.exe>`_
+U kunt het software installatiepakket downloaden: `Muonlab II
+<http://www.nikhef.nl/~h73/mlfeb2012.zip>`_
 
 U kunt een pdf-versie van deze handleiding downloaden: `handleiding
 <HiSPARCsoftware.pdf>`_
