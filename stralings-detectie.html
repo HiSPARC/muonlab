@@ -1,0 +1,236 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>Detecteren van kosmische straling &mdash; HiSPARC software 3.9 documentation</title>
+    
+    <link rel="stylesheet" href="_static/nature.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '',
+        VERSION:     '3.9',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <link rel="shortcut icon" href="_static/favicon.ico"/>
+    <link rel="top" title="HiSPARC software 3.9 documentation" href="index.html" />
+    <link rel="next" title="Metingen aan muonen met twee detectoren" href="looptijd-meting.html" />
+    <link rel="prev" title="Introductie" href="introductie.html" /> 
+  </head>
+  <body>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="looptijd-meting.html" title="Metingen aan muonen met twee detectoren"
+             accesskey="N">next</a></li>
+        <li class="right" >
+          <a href="introductie.html" title="Introductie"
+             accesskey="P">previous</a> |</li>
+        <li><a href="index.html">HiSPARC software 3.9 documentation</a> &raquo;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body">
+            
+  <div class="section" id="detecteren-van-kosmische-straling">
+<h1>Detecteren van kosmische straling<a class="headerlink" href="#detecteren-van-kosmische-straling" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="werking-van-scintillator-en-pmt">
+<h2>Werking van scintillator en PMT<a class="headerlink" href="#werking-van-scintillator-en-pmt" title="Permalink to this headline">¶</a></h2>
+<p>Kosmische straling wordt zichtbaar gemaakt in een “scintillator”. Kosmische deeltjes brengen atomen in het scintillatormateriaal in een aangeslagen toestand waarna deze atomen zichtbaar licht uitzenden. Het uitgezonden licht is zeer zwak en volstrekt verwaarloosbaar ten opzichte van daglicht of lamplicht zodat de scintillator zorgvuldig lichtdicht ingepakt is.
+Het zwakke licht dat ontstaat is sterk genoeg om een klein aantal elektronen vrij te maken uit een metaal. In een fotoversterker (PhotoMulTiplier of PMT in het Engels) wordt het kleine aantal elektronen vergroot tot ordegrootte honderdduizend waardoor een meetbare spanning ontstaat. Deze spanning is het signaal dat naar de computer gaat. Wanneer de opstelling goed werkt levert elk kosmische deeltje een spanningspuls.
+De PMT geeft ook wel toevallige signalen af die niets met kosmische straling te maken hebben. Je kunt er voor zorgen dat je kosmische straling meet en geen ruis door alleen gecorreleerde pulsen te tellen. Hoe dat in zijn werk gaat, blijkt gaandeweg het experiment.</p>
+<div class="figure align-right">
+<img alt="_images/muonbalk.jpg" src="_images/muonbalk.jpg" style="width: 400px;" />
+</div>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">De detector bestaat uit:</p>
+</div>
+<ul class="simple">
+<li>Een scintillator (links)</li>
+<li>Een fotomultiplier (afgekort: PMT)</li>
+<li>Twee aansluitingen: Één voor het signaal en één voor de voeding van de PMT  (beide rechts).</li>
+</ul>
+</div>
+<div class="section" id="gebruik-van-muonlab-en-software">
+<h2>Gebruik van muonlab en software<a class="headerlink" href="#gebruik-van-muonlab-en-software" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="materiaal">
+<h3>Materiaal<a class="headerlink" href="#materiaal" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li>Twee muonbalken  met elk twee kabels: Een BMC-kabel  voor het signaal (zwart), en een kabel voor de spanning van de PMT (grijs).</li>
+<li>Muonlab II met een usb-kabel</li>
+<li>Computer waarop het meetprogramma <em>muonlab II</em> is geïnstalleeerd.</li>
+</ul>
+</div>
+<div class="section" id="meetmethode-en-gebruik-van-software">
+<h3>Meetmethode en gebruik van software<a class="headerlink" href="#meetmethode-en-gebruik-van-software" title="Permalink to this headline">¶</a></h3>
+<p>Controleer of usbkabel van het muonlab is aangesloten op de computer voordat je de software opstart.  Zet de computer aan en start het programma muonlab-II. Controleer ook of de twee kabels van de sensor (muonbalk) zijn aangesloten op één kanaal van het meetkastje (muonlab-II).</p>
+<div class="figure align-right">
+<img alt="_images/muonlab-software-menu.png" src="_images/muonlab-software-menu.png" style="width: 150px;" />
+</div>
+<p>Het menu van het programma muonlab-II</p>
+<p><em>Bovenste knop van het menu</em>: Het muonlab moet nog door de computer herkend worden. Dat kan door op te zoeken welke COM-poort de computer heeft toegekend aan de USB. -&gt; Configuratiescherm -&gt; Systeem -&gt; Hardware -&gt; Apparaatbeheer -&gt; Poorten
+Je ziet dan welke Com-poort is toegekend en selecteert deze bovenin het menu.</p>
+<p><em>Tweede knop.</em> Telkens wanneer je een meting start wordt de data weggeschreven naar file, wanneer je dit wilt. Je kunt dit uitzetten wanneer je bijvoorbeeld oriënterende metingen doet.</p>
+<p><em>Met de derde knop</em> kies je het soort experiment dat je gaat uitvoeren:
+* Met twee detectoren (delta-time).
+* Met één detector (Life-time)
+Voor het eerste onderzoek gebruik je de instelling: Delta-time.</p>
+<p><em>De vierde knop (PMT-setup)</em> dient om de fotomultiplier in te stellen, zodat je daadwerkelijk signaal binnenkrijgt.
+* Input Threshold. Stel deze in op 0,020 Volt Een kleinere signaalwaarde maakt dat je eerder ruis meet zijn dan een serieus signaal.
+* High Voltage Level. Kies om te beginnen een waarde van 750 Volt voor de fotomultiplier. Deze werkt dan nog niet optimaal maar in elk geval redelijk.</p>
+<div class="figure align-center">
+<img alt="_images/PMT-setup.png" src="_images/PMT-setup.png" style="width: 300px;" />
+</div>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">Je wilt ongetwijfeld weten: <strong>waarom</strong> de drempelwaarde juist 0,020 Volt bedraagt en <strong>waar</strong> het optimum van de hoogspanning ligt. Onderzoek dit in overleg met je begeleider <strong>nadat je oriënterende metingen hebt gedaan.</strong></p>
+</div>
+<p><em>Met de vijfde knop</em> start je de meting.</p>
+<p>Wanneer alles goed is ingesteld verschijnen nu in de tellers:
+* Het aantal seconden dat gemeten wordt
+* Het aantal detecties door beide muonbalken.</p>
+<p>Een signaal wordt alleen geteld wanneer <strong>door beide detectoren, kort na elkaar,</strong> een signaal wordt waargenomen.</p>
+<p>Na enkele minuten heb je al heel wat kosmische deeltjes geteld als het goed is.</p>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">LET OP : Maak de spanning van de fotomultiplier nooit groter dan 1000V anders raakt dit kwetsbare onderdeel van de detector beschadigd.</p>
+</div>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">LET OP : Voor deze oriënterende metingen is het belangrijk dat beide detectoren op elkaar liggen zodat beide balken hetzelfde deeltje zien.</p>
+</div>
+</div>
+</div>
+<div class="section" id="orienterende-metingen-en-opdrachten">
+<h2>Oriënterende metingen en opdrachten<a class="headerlink" href="#orienterende-metingen-en-opdrachten" title="Permalink to this headline">¶</a></h2>
+<p>Voer oriënterende metingen uit door beide muonbalken in verschillende posities neer te leggen en het aantal detecties per seconde te noteren.
+* Begin met beide detectoren op elkaar
+* Verschuif de detectoren vervolgens of leg ze op een grote afstand van elkaar.</p>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">Waarom neemt het aantal detecties sterk af wanneer je de muonbalken van elkaar verwijdert?</p>
+</div>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">Hoe groot is het maximaal aantal deeltjes/sec dat je hebt waargenomen? Is de meting reproduceerbaar?</p>
+</div>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">Uit welke richting verwacht je dat de meeste kosmische straling komt? Kun je nu een uitspraak doen over  het aantal deeltjes per m2 per seconde dat vanuit de kosmos het aardoppervlak bereikt?</p>
+</div>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">Bekijk de muonbalk goed en maak een schatting voor de afmetingen van de scintillator. (Een van de muonbalken heeft een doorzichtige bovenkant zodat je goed kunt zien hoe de scintillator en de PMT er uitzien).</p>
+</div>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">De afmetingen van de scintillator in de lange muonbalk zijn: 115cm x 9,0cm x 5,0cm. Bereken met deze gegevens het aantal kosmische deeltjes per m2 per seconde dat het aardoppervlak bereikt. Ga er voorlopig vanuit dat de kosmische straling loodrecht van boven komt.</p>
+</div>
+<div class="section" id="conclusies-bij-opdracht-1">
+<h3>Conclusies bij opdracht 1<a class="headerlink" href="#conclusies-bij-opdracht-1" title="Permalink to this headline">¶</a></h3>
+<p>Wanneer je voldoende oriënterende metingen hebt verricht. Kun je antwoord geven op de volgende vragen.
+* Wat is de functie van de scintillator en op welke manier reageert deze op kosmische straling? Waarom is de scintillator zorgvuldig ingepakt?
+* Waar komt kosmische straling vandaan. Uit welke richtingen?
+* Kan de kosmische straling makkelijk muren daken en bouwmateriaal gaan?
+* Is het mogelijk dat de deeltjes die wij meten elektronen zijn?
+* Is het mogelijk dat de scintillator reageert op bijvoorbeeld gamma straling? en is het aannemelijk dat er veel gammastraling aanwezig is rond de detector?</p>
+<p>Voor het vervolgonderzoek gaan we er vanuit dat de detector voornamelijk muonen meet. Daarom is het belangrijk de bovenstaande vragen met je begeleider te bespreken.</p>
+</div>
+<div class="section" id="vooruitblik">
+<h3>Vooruitblik<a class="headerlink" href="#vooruitblik" title="Permalink to this headline">¶</a></h3>
+<p>In het volgende deel van het onderzoek komt de volgende vraag aan bod:
+* Wat is er precies te zien in het diagram? Wat staat er op de x-as en wat betekenen de twee instellingen voor de meting <em>Delta-Time</em> en <em>Life-time</em></p>
+</div>
+</div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar">
+        <div class="sphinxsidebarwrapper">
+            <p class="logo"><a href="index.html">
+              <img class="logo" src="_static/header.png" alt="Logo"/>
+            </a></p>
+  <h3><a href="index.html">Table Of Contents</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">Detecteren van kosmische straling</a><ul>
+<li><a class="reference internal" href="#werking-van-scintillator-en-pmt">Werking van scintillator en PMT</a></li>
+<li><a class="reference internal" href="#gebruik-van-muonlab-en-software">Gebruik van muonlab en software</a><ul>
+<li><a class="reference internal" href="#materiaal">Materiaal</a></li>
+<li><a class="reference internal" href="#meetmethode-en-gebruik-van-software">Meetmethode en gebruik van software</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#orienterende-metingen-en-opdrachten">Oriënterende metingen en opdrachten</a><ul>
+<li><a class="reference internal" href="#conclusies-bij-opdracht-1">Conclusies bij opdracht 1</a></li>
+<li><a class="reference internal" href="#vooruitblik">Vooruitblik</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="introductie.html"
+                        title="previous chapter">Introductie</a></p>
+  <h4>Next topic</h4>
+  <p class="topless"><a href="looptijd-meting.html"
+                        title="next chapter">Metingen aan muonen met twee detectoren</a></p>
+  <h3>This Page</h3>
+  <ul class="this-page-menu">
+    <li><a href="_sources/stralings-detectie.txt"
+           rel="nofollow">Show Source</a></li>
+  </ul>
+<div id="searchbox" style="display: none">
+  <h3>Quick search</h3>
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    <p class="searchtip" style="font-size: 90%">
+    Enter search terms or a module, class or function name.
+    </p>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="looptijd-meting.html" title="Metingen aan muonen met twee detectoren"
+             >next</a></li>
+        <li class="right" >
+          <a href="introductie.html" title="Introductie"
+             >previous</a> |</li>
+        <li><a href="index.html">HiSPARC software 3.9 documentation</a> &raquo;</li> 
+      </ul>
+    </div>
+    <div class="footer">
+        &copy; Copyright 2009-2012, HiSPARC.
+      Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.1.3.
+    </div>
+  </body>
+</html>
