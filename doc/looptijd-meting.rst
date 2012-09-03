@@ -11,19 +11,19 @@ In dit experiment voeren we een meting uit met twee muonbalken.  Kies voor een D
    :align: center
    :width: 600
     
-De x-as van het diagram geeft een tijdverschil weer in ns (nanoseconden !) Dit is de looptijd van met muon (De  tijd die het muon nodig heeft om van balk1 naar balk2 te reizen of omgekeerd). 
+De x-as van het diagram geeft een tijdverschil weer in ns (nanoseconden !) Dit is de looptijd van het muon (De  tijd die het muon nodig heeft om van balk1 naar balk2 te reizen of omgekeerd). 
 
 positieve en negatieve looptijden
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-Tijdens de meting komen zowel positieve als negatieve looptijden voor. Wanneer de balken boven op elkaar liggen geeft soms de bovenste balk als eerste een signaal, en soms de onderste muonbalk. Bespreek dit goed met je begeleider.
+Tijdens de meting komen zowel positieve als negatieve looptijden voor. Wanneer de balken boven op elkaar liggen geeft soms de bovenste balk als eerste een signaal, en soms de onderste muonbalk.Het is goed om hierbij stil te staan. 
 
-.. note:: Muonen komen niet uit het aardoppervlak. Je zult een andere verklaring moeten zoeken wanneer de onderste muonbalk als eerste een signaal afgeeft. Overleg met je begeleider om een goede verklaring te vinden.
+.. note:: Muonen komen niet uit het aardoppervlak. Je zult een andere verklaring moeten zoeken wanneer de onderste muonbalk als eerste een signaal afgeeft. Onderzoek dit en overleg met collega studenten of met je begeleider wat hiervoor een verklaring kan zijn.
 
 Op de y-as staat het aantal keren dat een looptijd geregistreerd wordt. In de figuur hierboven staan alle looptijden nog op 0.  Er is immers nog geen muon gemeten.
 
-de bingrootte of resolutie
-^^^^^^^^^^^^^^^^^^^^^^^^^^
-Wanneer je een klein bereik kiest voor de x-as (inzoomen) kun je zien dat de resolutie van de tijdmeting 0,5 ns bedraagt! De mogelijke looptijden van het muon kunnen worden verdeeld met een nauwkeurigheid van 0,5 ns! 
+de bingrootte
+^^^^^^^^^^^^^
+Wanneer je een klein bereik kiest voor de x-as (inzoomen) kun je zien dat de breedte vand de categorieen 0,5 ns bedraagt! De looptijden kunnen dus met een grote nauwkeurigheid in kaart worden gebracht. Het is gebruikelijk de categorieen in een histogram "bins" te noemen. 
 
 .. figure:: images/bingrootte.png
    :align: center
@@ -33,7 +33,7 @@ Metingen en opdrachten bij onderzoek 2
 --------------------------------------
 Voer bij deze opdracht kwantitatieve metingen uit  zodat je de een verband kunt onderzoeken tussen verschillende grootheden. 
 
-* Je gaat systematisch de afstand tussen de muonbalken variëren en kijkt dan wat er gebeurt.
+* Varieer systematisch de afstand tussen de muonbalken variëren en kijkt dan wat er gebeurt.
 
 .. note:: Wat is het verband tussen de hitrate (=aantal muonen/sec dat door beide balken gaat), en de afstand tussen de balken?
 
